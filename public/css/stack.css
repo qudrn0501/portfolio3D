@@ -1,0 +1,280 @@
+.stack {
+  width: 100%; height: 100vh;
+  padding: 80px 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background-color: #F9FAFB; */
+}
+.stack_container {
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.stack_container h1 {
+  width: 100%;
+  font-family: "P22 Underground";
+  font-size: 58px;
+  color: #191F28;
+  text-align: center;
+}
+.stack_apps {
+  position: absolute;
+  width: 210px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  top: 550px; 
+  left: 50%;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
+.stack_apps .app_img {
+  width: 70%;
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.stack_apps .app_scouter {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stack_apps:hover .app_scouter {
+  opacity: 1;
+}
+.stack_apps .app_scouter p {
+  font-family: "P22 Underground";
+  font-size: 22px;
+  color: #333D4B;
+}
+.stack_apps .app_scouter .gauge {
+  display: flex;
+  justify-content: flex-start;
+}
+.stack_apps .app_scouter .bar {
+  opacity: 0;
+  width: 5px; height: 20px;
+  background-color: #1B64DA;
+  border-radius: 5px;
+  margin-right: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.stack_apps .app_scouter .bar_off {
+  background-color: #B0B8C1;
+}
+.stack_apps:hover .app_scouter .bar {
+  opacity: 1;
+}
+.stack:hover .stack_apps {
+  opacity: 1;
+}
+.stack:hover .threejs {
+  top: 8% !important; left: 15% !important;
+}
+.stack:hover .html5 {
+  top: 25%!important; left: 10%!important;
+}
+.stack:hover .nodejs {
+  top: 40%!important; left: 25%!important;
+}
+.stack:hover .jquery {
+  top: 52%!important; left: 20%!important;
+}
+.stack:hover .react {
+  top: 60%!important; left: 10%!important;
+}
+.stack:hover .git {
+  top: 86%!important; left: 20%!important;
+}
+.stack:hover .firebase {
+  top: 20%!important; left: 30%!important;
+}
+.stack:hover .github {
+  top: 45%!important; left: 50%!important;
+}
+.stack:hover .vscode {
+  top: 25%!important; left: 55%!important;
+}
+.stack:hover .flyio {
+  top: 10%!important; left: 73%!important;
+}
+.stack:hover .mysql {
+  top: 40%!important; left: 78%!important;
+}
+.stack:hover .javascript {
+  top: 55%!important; left: 75%!important;
+}
+.stack:hover .css3 {
+  top: 70%!important; left: 67%!important;
+}
+.stack:hover .vuejs {
+  top: 85%!important; left: 78%!important;
+}
+
+.mysql .app_img {
+  background-image: url(../img/mysql.png);
+}
+.threejs .app_img {
+  background-image: url(../img/threejs.png);
+}
+.html5 .app_img {
+  background-image: url(../img/html5.png);
+}
+.nodejs .app_img {
+  background-image: url(../img/nodejs.png);
+}
+.jquery .app_img {
+  background-image: url(../img/jquery.png);
+}
+.react .app_img {
+  background-image: url(../img/react.png);
+}
+.git .app_img {
+  background-image: url(../img/git.png);
+}
+.firebase .app_img {
+  background-image: url(../img/firebase.png);
+}
+.github .app_img {
+  background-image: url(../img/github.png);
+}
+.vscode .app_img {
+  background-image: url(../img/vscode.png);
+}
+.flyio .app_img {
+  background-image: url(../img/flyio.png);
+}
+.flyio .app_scouter {
+  /* width: 120px; */
+}
+.javascript .app_img {
+  background-image: url(../img/js.png);
+}
+.css3 .app_img {
+  background-image: url(../img/css3.png);
+}
+.vuejs .app_img {
+  background-image: url(../img/vue.png);
+}
+.computer {
+  width: 30%; height: 30%;
+  position: absolute;
+  bottom: 50px; left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../img/computer.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* responsive max-width 1280px */
+@media only screen and (max-width: 1280px) {
+
+}
+
+/* responsive max-width 989px */
+@media only screen and (max-width: 989px) {
+  .stack_container h1 {
+    font-size: 48px;
+  }
+}
+
+/* responsive max-width 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* responsive max-width 460px */
+@media only screen and (max-width: 460px) {
+  .stack .stack_apps {
+    opacity: 1;
+  }
+  .stack .threejs {
+    top: 8% !important; left: 2% !important;
+  }
+  .stack .html5 {
+    top: 30%!important; left: 1%!important;
+  }
+  .stack .nodejs {
+    top: 40%!important; left: 6%!important;
+  }
+  .stack .jquery {
+    top: 52%!important; left: 2%!important;
+  }
+  .stack .react {
+    top: 60%!important; left: 10%!important;
+  }
+  .stack .git {
+    top: 86%!important; left: 0%!important;
+  }
+  .stack .firebase {
+    top: 20%!important; left: 15%!important;
+  }
+  .stack .github {
+    top: 45%!important; left: 50%!important;
+  }
+  .stack .vscode {
+    top: 25%!important; left: 55%!important;
+  }
+  .stack .flyio {
+    top: 10%!important; left: 58%!important;
+  }
+  .stack .mysql {
+    top: 35%!important; left: 61%!important;
+  }
+  .stack .javascript {
+    top: 55%!important; left: 57%!important;
+  }
+  .stack .css3 {
+    top: 63%!important; left: 58%!important;
+  }
+  .stack .vuejs {
+    top: 81%!important; left: 61%!important;
+  }
+
+  .stack_apps {
+    position: absolute;
+    width: 210px;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    top: 550px;
+    left: 50%;
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+  }
+  .stack_apps .app_img {
+    width: 20%;
+  }
+  .stack_apps .app_scouter {
+    opacity: 1;
+    width: 40%;
+  }
+  .stack_apps .app_scouter p {
+    font-size: 16px;
+  }
+  .stack_apps .app_scouter .bar {
+    opacity: 1;
+    width: 4px;
+    height: 16px;
+    background-color: #1B64DA;
+    border-radius: 5px;
+    margin-right: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .stack_apps .app_scouter .bar_off {
+    background-color: #B0B8C1;
+  }
+  .stack_container h1 {
+    font-size: 32px;
+  }
+
+
+}

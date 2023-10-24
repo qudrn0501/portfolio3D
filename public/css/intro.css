@@ -1,0 +1,509 @@
+/* intro 1st */
+.intro {
+  width: 100%; height: 100vh;
+  padding-top: 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.intro_container {
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "P22 Underground";
+}
+.intro_container::after {
+  content: "";
+  top: -20px;
+  right: -400px;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: #1B64DA;
+  z-index: 0;
+}.intro_container::before {
+  content: "";
+  top: 0px;
+  right: 140px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #333D4B;
+  z-index: 0;
+}
+.intro_container .intro_text {
+  margin-left: 11%; margin-top: 150px;
+  z-index: 10;
+}
+.intro_container .intro_text h1 {
+  color: #191F28;
+  font-size: 80px; font-weight: medium; 
+}
+.intro_container .intro_text .intro_count {
+  display: flex;
+  justify-content: space-around;
+}
+.intro_container .intro_text .intro_count div {
+  width: 196px; height: 100px;
+  background-color: #333D4B;
+  border-radius: 10px;
+  font-size: 32px; line-height: 100px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+.intro_container .intro_text .intro_count div:first-child {
+  margin-right: 20px;
+}
+.intro_img {
+  position: absolute;
+  bottom: 12vh;
+  right: -4vw;
+  width: 70vh;
+  height: 70vh;
+  background-image: url(../img/profile1.png);
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* intro 2nd page */
+.intro2 {
+  width: 100%; height: 100vh;
+  padding-top: 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.intro2_container {
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.intro2_left {
+  width: 433px; height: 100%;
+  padding-top: 24px; padding-left: 100px;
+  box-sizing: border-box;
+}
+.intro2_left .title {
+  font-family: "P22 Underground";
+}
+.intro2_left .title div {
+  display: flex;
+  align-items: flex-end;
+}
+.intro2_left .title div h1  {
+  font-size: 40px;
+  color: #333D4B;
+}
+.intro2_left .title div span  {
+  font-size: 96px;
+  line-height: 96px;
+  color: #1B64DA;
+  /* margin-right: 15px; */
+}
+.intro2_left .title h2  {
+  font-size: 40px;
+  color: #6B7684;
+  line-height: 45px;
+}
+.intro2_right {
+  width: 847px;; height: 100%;
+  padding-top: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.intro2_right .subject {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: bold;
+  color: #191F28;
+  margin-bottom: 30px;
+}
+.intro2_right .subject span {
+  color: #1B64DA;
+}
+.intro2_right ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+.intro2_right ul li {
+  width: 100%;
+}
+.intro2_right ul li .subtitle_first {
+  margin-bottom: 26px;
+}
+.intro2_right ul li .subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333D4B;
+  /* margin-bottom: 10px; */
+}
+.intro2_right ul li .item {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333D4B;
+  margin-bottom: 2px;
+}
+.intro2_right ul li p{
+  font-size: 16px;
+  color: #6B7684;
+}
+.intro2_right ul li span{
+  font-size: 14px;
+  font-weight: bold;
+  color: #1B64DA;
+  margin-left: 8px;
+}
+.intro2_right ul li .subtitle_box {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0;
+}
+/* .intro2_right .experience {
+  width: 100vh;
+} */
+/* .intro2_right .experience > li {
+  width: 100vh;
+} */
+.intro2_right .experience .experience_box {
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  overscroll-behavior-y: contain;
+  background-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-color 300ms linear;
+}
+.intro2_right .experience .experience_box.on-scrollbar {
+  background-color: #e0e0e1;
+}
+.intro2_right .experience .experience_box::-webkit-scrollbar {
+  width: 16px;
+}
+.intro2_right .experience .experience_box::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+  margin: 10px 0px;
+}
+.intro2_right .experience .experience_box::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: inherit;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.intro2_right .experience .experience_list {
+  /* height: 30vh; */
+  background-color: white;
+  color: #000008;
+}
+/* .intro2_right .workpjt_box {
+  width: 100vh;
+  height: 18vh;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  background-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-color 300ms linear;
+} */
+
+.intro2_right .workpjt_ul {
+   width: 100%;
+} 
+
+.intro2_right .workpjt_ul li {
+  margin-bottom: 10px;
+} 
+
+.intro_3dpositon {
+  position: absolute;
+  z-index: 99;
+  top: 10vh;
+  right: -10vw;
+}
+
+/* responsive max-width 1410px */
+@media only screen and (max-width: 1410px) {
+  .intro_3dpositon {
+    position: absolute;
+    z-index: 99;
+    top: 10vh;
+    right: 10vw;
+  }
+}
+
+/* responsive max-width 989px */
+@media only screen and (max-width: 989px) {
+  /* intro 1st */
+  .intro_container::after {
+    top: 260px;
+    right: -160px;
+    width: 600px;
+    height: 600px;
+  }.intro_container::before {
+    top: 50px; right: 60px;
+    width: 400px; height: 400px;
+  }
+  .intro_container .intro_text h1 {
+    color: #191F28;
+    font-size: 70px; font-weight: medium; 
+  }
+  .intro_container .intro_text .intro_count div {
+    width: 150px; height: 75px;
+    font-size: 24px; line-height: 75px;
+  }
+  .intro_img {
+    bottom: 12vh;
+    right: -5vw;
+    width: 60vh;
+    height: 56vh;
+  }
+
+  /* intro 2nd page */
+  .intro2_left {
+    padding-left: 60px;
+  }
+  .intro2_left .title div h1  {
+    font-size: 36px;
+  }
+  .intro2_left .title div span  {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .intro2_left .title h2  {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .intro2_right {
+    width: 100%; height: 100%;
+  }
+  .intro2_right .subject {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 80px;
+  }
+  .intro2_right ul li .subtitle {
+    font-size: 24px;
+  }
+  .intro2_right ul li p{
+    font-size: 14px;
+  }
+  .intro2_right ul li .subtitle_box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0 0;
+  }
+  .intro2_right ul li span{
+    margin-left: 0px;
+  }
+}
+
+/* responsive max-width 767px */
+@media only screen and (max-width: 767px) {
+  /* intro 1st */
+  .intro_container {
+    padding: 0 20px;
+  }
+  .intro_container::after {
+    top: 310px;
+    right: -190px;
+    width: 500px;
+    height: 500px;
+  }
+  .intro_container::before {
+    top: 406px;
+    right: 120px;
+    width: 350px;
+    height: 350px;
+  }
+  .intro_container .intro_text {
+    margin-left: 0;
+    margin-top: 60px;
+    z-index: 10;
+  }
+  .intro_container .intro_text h1 {
+    font-size: 60px;
+    line-height: 74px;
+  }
+  .intro_container .intro_text .intro_count div:first-child {
+    margin-right: 20px;
+  }
+  .intro_img {
+    bottom: 6vh;
+    right: -8vw;
+    width: 50vh;
+    height: 50vh;
+  }
+
+  /* intro 2nd page */
+  .intro2 {
+    padding-top: 80px;
+  }
+  .intro2_container {
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+    display: block;
+  }
+  .intro2_left {
+    width: 100%;
+    height: 152px;
+    padding-top: 0px;
+    padding-left: 0px;
+    box-sizing: border-box;
+  }
+  .intro2_left .title {
+    font-family: "P22 Underground";
+  }
+  .intro2_left .title div {
+    display: flex;
+    align-items: flex-end;
+  }
+  .intro2_left .title div h1  {
+    font-size: 36px;
+  }
+  .intro2_left .title div span  {
+    font-size: 80px;
+    line-height: 80px;
+    color: #1B64DA;
+    /* margin-right: 15px; */
+  }
+  .intro2_left .title h2  {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .intro2_right {
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
+  .intro2_right .subject {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+  .intro2_right ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .intro2_right ul li {
+    width: 48%;
+  }
+  .intro2_right ul li .subtitle_first {
+    margin-bottom: 26px;
+  }
+  .intro2_right ul li .subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333D4B;
+    /* margin-bottom: 10px; */
+  }
+  .intro2_right ul li p{
+    font-size: 16px;
+    color: #6B7684;
+  }
+  .intro2_right ul li span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1B64DA;
+    margin-left: 0px;
+  }
+  .intro2_right ul li .subtitle_box {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0 0;
+  }
+
+}
+
+/* responsive max-width 480px */
+@media only screen and (max-width: 480px) {
+  .intro {
+    padding-top: 32px;
+  }
+  .intro_container .intro_text h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .intro_container .intro_text .intro_count {
+    padding-top: 20px;
+  }
+  .intro2 {
+    padding-top: 32px;
+  }
+  .intro2_left .title div span {
+    font-size: 67px;
+    line-height: 67px;
+  }
+  .intro2_left .title div h1 {
+    font-size: 32px;
+  }
+  .intro2_left .title h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .intro2_right ul li {
+    width: 95%;
+  }
+  .intro2_right ul li .subtitle {
+    font-size: 18px;
+  }
+  .intro2_right ul li .item {
+    font-size: 14px;
+  }
+  .intro2_right ul li p {
+    font-size: 10px;
+  }
+  .intro2_right ul li span {
+    font-size: 10px;
+  }
+  .intro_img {
+    bottom: 6vh;
+    right: -8vw;
+    width: 35vh;
+    height: 40vh;
+  }
+  .intro_container::after {
+    top: 322px;
+    right: -180px;
+    width: 400px;
+    height: 400px;
+  }
+  .intro_container::before {
+    top: 406px;
+    right: 90px;
+    width: 250px;
+    height: 250px;
+  }
+  .intro2_left {
+    height: 130px;
+  }
+  .intro2_right {
+    padding-top: 0px;
+  }
+  .intro2_right .subject {
+    font-size: 23px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  .intro_3dpositon {
+    position: absolute;
+    z-index: 99;
+    top: 35vh;
+    right: 25vw;
+  }
+}
