@@ -224,32 +224,21 @@ export default {
 
       // Renderer
       this.renderer = new THREE.WebGLRenderer({alpha: true});
-      if(window.innerWidth > 1410) {
-        this.renderer.setSize(window.innerWidth/2, window.innerHeight/1.8);
-      } else if(window.innerWidth <= 1410) {
-        this.renderer.setSize(window.innerWidth/2, window.innerHeight/2.2);
-      }
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+
       this.renderer.setClearColor(0x000000, 0);
       this.$refs.sceneContainer.appendChild(this.renderer.domElement);
 
-      // if(window.innerWidth <= 480) {
-      //   this.renderer.setSize(window.innerWidth, window.innerHeight/2);
-      // }
-
       // Light
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-      directionalLight.position.set(1, 1, 1);
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 10);
+      directionalLight.position.set(1, 1, 3);
       this.scene.add(directionalLight);
 
       // Resizing
       window.addEventListener("resize", () => {
         this.camera.aspect = window.innerWidth / window.innerHeight;
         this.camera.updateProjectionMatrix();
-        if(window.innerWidth > 1410) {
-          this.renderer.setSize(window.innerWidth/2, window.innerHeight/1.8);
-        } else if(window.innerWidth <= 1410) {
-          this.renderer.setSize(window.innerWidth/2, window.innerHeight/2.2);
-        }
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
       });
     },
 
@@ -258,33 +247,30 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/whale.glb', (gltf) => {
         this.model = gltf.scene;
-        // this.model.scale.set(0.01, 0.01, 0.01);
-        // this.model.rotation.set(1, -1.1, 0.8);
-        // this.model.position.set(1, -1, -1.5);
         if(window.innerWidth <= 480) {
-          this.model.scale.set(0.005, 0.005, 0.005);
-          this.model.rotation.set(-1.8, -0.7, -1.3);
-          this.model.position.set(-1, 0, -2.5);
-        } else if(window.innerWidth <= 767) {
-          this.model.scale.set(0.005, 0.005, 0.005);
-          this.model.rotation.set(-1.8, -0.7, -1.3);
-          this.model.position.set(-1, 0, -2.5);
-        } else if(window.innerWidth <= 989) {
-          this.model.scale.set(0.005, 0.005, 0.005);
-          this.model.rotation.set(-1.8, -0.7, -1.3);
-          this.model.position.set(-1, 0, -2.5);
-        } else if(window.innerWidth <= 1280) {
-          this.model.scale.set(0.005, 0.005, 0.005);
-          this.model.rotation.set(-1.8, -0.7, -1.3);
-          this.model.position.set(-1, 0, -2.5);
-        } else if(window.innerWidth <= 1410) {
-          this.model.scale.set(0.005, 0.005, 0.005);
-          this.model.rotation.set(-1.8, -0.7, -1.3);
-          this.model.position.set(-1, 0, -2.5);
-        } else if(window.innerWidth > 1410) {
-          this.model.scale.set(0.01, 0.01, 0.01);
+          this.model.scale.set(0.6, 0.6, 0.6);
           this.model.rotation.set(1, -1.1, 0.8);
-          this.model.position.set(1, -1, -1.5);
+          this.model.position.set(0.5, -1.15, -1.2);
+        } else if(window.innerWidth <= 767) {
+          this.model.scale.set(0.7, 0.7, 0.7);
+          this.model.rotation.set(1, -1.1, 0.8);
+          this.model.position.set(1, -0.15, -1.5);
+        } else if(window.innerWidth <= 989) {
+          this.model.scale.set(1, 1, 1);
+          this.model.rotation.set(1, -1.1, 0.8);
+          this.model.position.set(1, -0.15, -1.5);
+        } else if(window.innerWidth <= 1366) {
+          this.model.scale.set(1, 1, 1);
+          this.model.rotation.set(1, -1.1, 0.8);
+          this.model.position.set(1, -0.15, -1.5);
+        } else if(window.innerWidth <= 1600) {
+          this.model.scale.set(1, 1, 1);
+          this.model.rotation.set(1, -1.1, 0.8);
+          this.model.position.set(1, -0.15, -1.5);
+        } else {
+          this.model.scale.set(1, 1, 1);
+          this.model.rotation.set(1, -1.1, 0.8);
+          this.model.position.set(1, -0.15, -1.5);
         }
 
         mixer = new THREE.AnimationMixer(gltf.scene);

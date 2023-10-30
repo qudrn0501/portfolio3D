@@ -65,7 +65,7 @@ export default {
 
       // Renderer
       this.renderer = new THREE.WebGLRenderer({alpha: true});
-      this.renderer.setSize(window.innerWidth/1.6, window.innerHeight/1.6);
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
       this.renderer.setClearColor(0x000000, 0);
       this.$refs.sceneContainer.appendChild(this.renderer.domElement);
 
@@ -78,7 +78,7 @@ export default {
       window.addEventListener("resize", () => {
         this.camera.aspect = window.innerWidth / window.innerHeight;
         this.camera.updateProjectionMatrix();
-        this.renderer.setSize(window.innerWidth/1.6, window.innerHeight/1.6);
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
 
       });
     },
@@ -87,7 +87,7 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(0, 0, 0);
         this.model.position.set(0, 0, 0);
 
@@ -104,9 +104,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(0, 0, 1);
-        this.model.position.set(4, -2, 1);
+        this.model.position.set(2, -1, 0.5);
 
         mixer2 = new THREE.AnimationMixer(gltf.scene);
         let ani2 = gltf.animations;
@@ -121,9 +122,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(0, 1, 0);
-        this.model.position.set(-4, -2, 0);
+        this.model.position.set(-2, -1, 0);
 
         mixer3 = new THREE.AnimationMixer(gltf.scene);
         let ani3 = gltf.animations;
@@ -138,9 +140,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(1, 0, 0);
-        this.model.position.set(3, 3, 0);
+        this.model.position.set(1.5, 1.5, 0);
 
         mixer4 = new THREE.AnimationMixer(gltf.scene);
         let ani4 = gltf.animations;
@@ -155,9 +158,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(1, 1, 0);
-        this.model.position.set(-2, 3, -2);
+        this.model.position.set(-1, 1.5, -1);
 
         mixer5 = new THREE.AnimationMixer(gltf.scene);
         let ani5 = gltf.animations;
@@ -172,9 +176,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(0, 1, 1);
-        this.model.position.set(1, -2, 1);
+        this.model.position.set(0.5, -1, 0.5);
 
         mixer6 = new THREE.AnimationMixer(gltf.scene);
         let ani6 = gltf.animations;
@@ -189,9 +194,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(1, 1, 1);
-        this.model.position.set(-1, -1, 3);
+        this.model.position.set(-0.5, -0.5, 1.5);
 
         mixer7 = new THREE.AnimationMixer(gltf.scene);
         let ani7 = gltf.animations;
@@ -206,9 +212,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(2, 1, 1);
-        this.model.position.set(2, 1, 1);
+        this.model.position.set(1, 0.5, 0.5);
 
         mixer8 = new THREE.AnimationMixer(gltf.scene);
         let ani8 = gltf.animations;
@@ -223,9 +230,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(1, 2, 1);
-        this.model.position.set(1, 2, 1);
+        this.model.position.set(0.5, 1, 0.5);
 
         mixer9 = new THREE.AnimationMixer(gltf.scene);
         let ani9 = gltf.animations;
@@ -240,9 +248,10 @@ export default {
       const loader = new GLTFLoader();
       loader.load('/model/butterfly.glb', (gltf) => {
         this.model = gltf.scene;
-        this.model.scale.set(1, 1, 1);
+        // this.model.scale.set(1, 1, 1);
+        this.model.scale.set(0.5, 0.5, 0.5);
         this.model.rotation.set(1, 1, 2);
-        this.model.position.set(2, -2, 2);
+        this.model.position.set(1, -1, 1);
 
         mixer10 = new THREE.AnimationMixer(gltf.scene);
         let ani10 = gltf.animations;

@@ -76,46 +76,46 @@
   opacity: 1;
 }
 .stack:hover .threejs {
-  top: 8% !important; left: 15% !important;
+  top: 8% ; left: 15% ;
 }
 .stack:hover .html5 {
-  top: 25%!important; left: 10%!important;
+  top: 25%; left: 10%;
 }
 .stack:hover .nodejs {
-  top: 40%!important; left: 25%!important;
+  top: 40%; left: 25%;
 }
 .stack:hover .jquery {
-  top: 52%!important; left: 20%!important;
+  top: 52%; left: 20%;
 }
 .stack:hover .react {
-  top: 60%!important; left: 10%!important;
+  top: 60%; left: 10%;
 }
 .stack:hover .git {
-  top: 86%!important; left: 20%!important;
+  top: 86%; left: 20%;
 }
 .stack:hover .firebase {
-  top: 20%!important; left: 30%!important;
+  top: 20%; left: 30%;
 }
 .stack:hover .github {
-  top: 45%!important; left: 50%!important;
+  top: 45%; left: 50%;
 }
 .stack:hover .vscode {
-  top: 25%!important; left: 55%!important;
+  top: 25%; left: 55%;
 }
 .stack:hover .flyio {
-  top: 10%!important; left: 73%!important;
+  top: 10%; left: 73%;
 }
 .stack:hover .mysql {
-  top: 40%!important; left: 78%!important;
+  top: 40%; left: 78%;
 }
 .stack:hover .javascript {
-  top: 55%!important; left: 75%!important;
+  top: 55%; left: 75%;
 }
 .stack:hover .css3 {
-  top: 70%!important; left: 67%!important;
+  top: 70%; left: 67%;
 }
 .stack:hover .vuejs {
-  top: 85%!important; left: 78%!important;
+  top: 85%; left: 78%;
 }
 
 .mysql .app_img {
@@ -174,15 +174,159 @@
   background-position: center;
 }
 
-/* responsive max-width 1280px */
-@media only screen and (max-width: 1280px) {
-
+/* responsive max-width 1366px */
+@media only screen and (max-width: 1366px) {
+  .stack_container h1 {
+    font-size: 48px;
+  }
+  .computer {
+    width: 12%;
+    height: 20%;
+  }
+  .stack_apps {
+    position: absolute;
+    width: 150px;
+    height: 65px;
+  }
+  .stack_apps .app_scouter p {
+    font-size: 18px;
+  }
+  .stack_apps .app_scouter .bar {
+    width: 4px;
+    height: 14px;
+  }
 }
 
 /* responsive max-width 989px */
 @media only screen and (max-width: 989px) {
   .stack_container h1 {
     font-size: 48px;
+  }
+  .stack .stack_apps {
+    opacity: 1;
+  }
+  .stack .threejs {
+    top: 8% ; left: 15% ;
+  }
+  .stack .html5 {
+    top: 30%; left: 26%;
+  }
+  .stack .nodejs {
+    top: 40%; left: 6%;
+  }
+  .stack .jquery {
+    top: 52%; left: 2%;
+  }
+  .stack .react {
+    top: 60%; left: 10%;
+  }
+  .stack .git {
+    top: 69%; left: 8%;
+  }
+  .stack .firebase {
+    top: 20%; left: 15%;
+  }
+  .stack .github {
+    top: 45%; left: 50%;
+  }
+  .stack .vscode {
+    top: 25%; left: 55%;
+  }
+  .stack .flyio {
+    top: 10%; left: 58%;
+  }
+  .stack .mysql {
+    top: 35%; left: 61%;
+  }
+  .stack .javascript {
+    top: 55%; left: 57%;
+  }
+  .stack .css3 {
+    top: 63%; left: 67%;
+  }
+  .stack .vuejs {
+    top: 72%; left: 67%;
+  }
+  
+
+  .stack:hover .threejs {
+    top: 8% ; left: 15% ;
+  }
+  .stack:hover .html5 {
+    top: 30%; left: 26%;
+  }
+  .stack:hover .nodejs {
+    top: 40%; left: 6%;
+  }
+  .stack:hover .jquery {
+    top: 52%; left: 2%;
+  }
+  .stack:hover .react {
+    top: 60%; left: 10%;
+  }
+  .stack:hover .git {
+    top: 69%; left: 8%;
+  }
+  .stack:hover .firebase {
+    top: 20%; left: 15%;
+  }
+  .stack:hover .github {
+    top: 45%; left: 50%;
+  }
+  .stack:hover .vscode {
+    top: 25%; left: 55%;
+  }
+  .stack:hover .flyio {
+    top: 10%; left: 58%;
+  }
+  .stack:hover .mysql {
+    top: 35%; left: 61%;
+  }
+  .stack:hover .javascript {
+    top: 55%; left: 57%;
+  }
+  .stack:hover .css3 {
+    top: 63%; left: 67%;
+  }
+  .stack:hover .vuejs {
+    top: 72%; left: 67%;
+  }
+  .stack_apps {
+    position: absolute;
+    width: 210px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    top: 550px;
+    left: 50%;
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+  }
+  .stack_apps .app_img {
+    width: 40%;
+  }
+  .stack_apps .app_scouter {
+    opacity: 1;
+    width: 100%;
+  }
+  .stack_apps .app_scouter p {
+    font-size: 26px;
+  }
+  .stack_apps .app_scouter .bar {
+    opacity: 1;
+    width: 5px;
+    height: 18px;
+    background-color: #1B64DA;
+    border-radius: 5px;
+    margin-right: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .stack_apps .app_scouter .bar_off {
+    background-color: #B0B8C1;
+  }
+  .computer {
+    width: 30%;
+    height: 40%;
   }
 }
 
@@ -197,46 +341,90 @@
     opacity: 1;
   }
   .stack .threejs {
-    top: 8% !important; left: 2% !important;
+    top: 8% ; left: 2% ;
   }
   .stack .html5 {
-    top: 30%!important; left: 1%!important;
+    top: 30%; left: 1%;
   }
   .stack .nodejs {
-    top: 40%!important; left: 6%!important;
+    top: 40%; left: 6%;
   }
   .stack .jquery {
-    top: 52%!important; left: 2%!important;
+    top: 52%; left: 2%;
   }
   .stack .react {
-    top: 60%!important; left: 10%!important;
+    top: 60%; left: 10%;
   }
   .stack .git {
-    top: 86%!important; left: 0%!important;
+    top: 86%; left: 0%;
   }
   .stack .firebase {
-    top: 20%!important; left: 15%!important;
+    top: 20%; left: 15%;
   }
   .stack .github {
-    top: 45%!important; left: 50%!important;
+    top: 45%; left: 50%;
   }
   .stack .vscode {
-    top: 25%!important; left: 55%!important;
+    top: 25%; left: 55%;
   }
   .stack .flyio {
-    top: 10%!important; left: 58%!important;
+    top: 10%; left: 58%;
   }
   .stack .mysql {
-    top: 35%!important; left: 61%!important;
+    top: 35%; left: 61%;
   }
   .stack .javascript {
-    top: 55%!important; left: 57%!important;
+    top: 55%; left: 57%;
   }
   .stack .css3 {
-    top: 63%!important; left: 58%!important;
+    top: 63%; left: 58%;
   }
   .stack .vuejs {
-    top: 81%!important; left: 61%!important;
+    top: 81%; left: 61%;
+  }
+  
+
+  .stack:hover .threejs {
+    top: 8% ; left: 2% ;
+  }
+  .stack:hover .html5 {
+    top: 30%; left: 1%;
+  }
+  .stack:hover .nodejs {
+    top: 40%; left: 6%;
+  }
+  .stack:hover .jquery {
+    top: 52%; left: 2%;
+  }
+  .stack:hover .react {
+    top: 60%; left: 10%;
+  }
+  .stack:hover .git {
+    top: 86%; left: 0%;
+  }
+  .stack:hover .firebase {
+    top: 20%; left: 15%;
+  }
+  .stack:hover .github {
+    top: 45%; left: 50%;
+  }
+  .stack:hover .vscode {
+    top: 25%; left: 55%;
+  }
+  .stack:hover .flyio {
+    top: 10%; left: 58%;
+  }
+  .stack:hover .mysql {
+    top: 35%; left: 61%;
+  }
+  .stack:hover .javascript {
+    top: 55%; left: 57%;
+  }
+  .stack:hover .css3 {
+    top: 63%; left: 58%;
+  }
+  .stack:hover .vuejs {
+    top: 81%; left: 61%;
   }
 
   .stack_apps {
@@ -274,6 +462,10 @@
   }
   .stack_container h1 {
     font-size: 32px;
+  }
+  
+  .computer {
+      height: 30%;
   }
 
 

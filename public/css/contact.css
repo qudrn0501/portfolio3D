@@ -98,24 +98,110 @@
 
 .contact_3dpositon {
   position: absolute;
-  z-index: 99;
-  top: 3vh;
-  right: -16vw;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
 }
 
 
-/* responsive max-width 1280px */
-@media only screen and (max-width: 1280px) {
-
+/* responsive max-width 1366px */
+@media only screen and (max-width: 1366px) {
+  .contact_text h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .contact_text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .contact_on {
+    width: 410px;
+    height: 120px;
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 22px;
+    top: 229px;
+    left: 0px;
+    padding-top: 16px;
+  }
+  .contact_close {
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  .contact_3dpositon {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* responsive max-width 989px */
 @media only screen and (max-width: 989px) {
+  .contact_container {
+    align-items: flex-start;
+  }
   .contact_img {
     bottom: -34vh;
     right: -10vw;
     width: 57vh;
     height: 90vh;
+  }
+  .contact_container::after {
+    content: "";
+    top: 460px;
+    right: -400px;
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #1B64DA;
+    z-index: 0;
+  }
+  .contact_container::before {
+    content: "";
+    top: 250px;
+    right: -60px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #333D4B;
+    z-index: 0;
+  }
+  .contact_text h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .contact_text p {
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .contact_btn {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+  }
+  .contact_on {
+    width: 400px;
+    height: 190px;
+    font-size: 22px;
+    line-height: 40px;
+    padding-left: 16px;
+    top: 295px;
+    left: 0px;
+    padding-top: 48px;
+  }
+  .contact_close {
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -197,14 +283,25 @@
     cursor: pointer;
   }
   .contact_3dpositon {
-    position: absolute;
-    z-index: 99;
-    top: 40vh;
-    right: 15vw;
+    bottom: -20vh;
   }
 }
 
-/* responsive max-width 390px */
-@media only screen and (max-width: 390px) {
-
+/* responsive max-width 480px */
+@media only screen and (max-width: 480px) {
+  .contact_on {
+    width: 240px;
+    height: 120px;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 8px;
+    top: 257px;
+    padding-top: 36px;
+  }
+  .contact_close {
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+  }
 }

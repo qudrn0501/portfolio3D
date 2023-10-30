@@ -86,12 +86,53 @@
   cursor: pointer;
 }
 
-/* responsive max-width 1280px */
-@media only screen and (max-width: 1280px) {
-
+/* responsive max-width 1600px */
+@media only screen and (max-width: 1600px) {
+  .clone_container h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  .clone_box .clone_img {
+    height: 65vh;
+  }
+  .clone_content h3 {
+    font-size: 20px;
+  }
+  .clone_content p {
+    font-size: 16px;
+  }
+  .clone_content button {
+    width: 120px;
+    height: 34px;
+    font-size: 18px;
+    line-height: 34px;
+  }
 }
 
-/* responsive max-width 989px */
+/* responsive max-width 1366px */
+@media only screen and (max-width: 1366px) {
+  .clone_container h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .clone_box .clone_img {
+    height: 55vh;
+  }
+  .clone_content h3 {
+    font-size: 16px;
+  }
+  .clone_content p {
+    font-size: 14px;
+  }
+  .clone_content button {
+    width: 120px;
+    height: 34px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+/* responsive max-width 989px*/
 @media only screen and (max-width: 989px) {
   .clone_container h1 {
     font-size: 48px;
@@ -108,16 +149,23 @@
     width: 100%;
     border: 0.5px solid #B0B8C1;
   }
-  .clone_content li h3 {
+  .clone_content h3 {
     font-size: 20px;
   }
-  .clone_content li p {
-    font-size: 14px;
+  .clone_content p {
+    font-size: 16px;
   }
   .clone_content li button {
     width: 120px; height: 40px;
     font-size: 18px;
     line-height: 40px;
+  }
+  .clone_box .clone_img {
+    width: 85%;
+    height: 70vh;
+  }
+  .clone_content {
+    width: 85%;
   }
 }
 
@@ -146,5 +194,19 @@
     overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 10px;
+  }
+  .clone_content h3 {
+    font-size: 12px;
+    margin-right: 6px;
+  }
+  .clone_content p {
+    font-size: 8px;
+  }
+  .clone_content button {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 6px;
   }
 }

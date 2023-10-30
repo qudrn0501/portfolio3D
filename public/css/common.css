@@ -84,7 +84,7 @@ header .btn_nav span:last-child {
   z-index: 10;
   background-color: #1B64DA;
   text-align: center;
-  line-height: 40px;
+  line-height: 44px;
   color: #fff;
   font-family: "P22 Underground";
   font-size: 20px;
@@ -92,7 +92,25 @@ header .btn_nav span:last-child {
   border: 0.5px solid #fff;
 }
 
-
+/* responsive max-width 1366px */
+@media only screen and (max-width: 1366px) {
+  header {
+    height: 60px;
+  }
+  header .logo {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  header .btn_nav {
+    width: 30px;
+    height: 19px;
+  }
+  header .btn_nav span {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+  } 
+}
 
 /* responsive max-width 767px */
 @media only screen and (max-width: 989px) {
@@ -107,10 +125,7 @@ header .btn_nav span:last-child {
   }
 }
 
-/* responsive max-width 767px */
-@media only screen and (max-width: 767px) {
-  
- }
+
  
  /* responsive max-width 480px */
  @media only screen and (max-width: 480px) {
@@ -143,6 +158,12 @@ header .btn_nav span:last-child {
   }
   .mapsite_content li {
     font-size: 26px;
+  }
+
+  .topbtn {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
   }
 
 
